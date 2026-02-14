@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <title th:text="${title}">Home</title>
+</head>
+<body>
+  <h1 th:text="${title}">Online Learning Platform</h1>
+  <p th:text="${message}">Welcome!</p>
+
+  <nav>
+    <a href="/">Home</a> |
+    <a href="/courses">Courses</a> |
+    <a href="/login">Login</a>
+  </nav>
+
+  <hr />
+  <h2>Featured Courses</h2>
+  <ul>
+    <li>Java Basics</li>
+    <li>Spring Boot Intro</li>
+    <li>Web Development</li>
+  </ul>
+</body>
+</html>

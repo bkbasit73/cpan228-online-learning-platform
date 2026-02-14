@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <title>Create Course</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="header">➕ Create Course</div>
+
+<nav>
+  <a href="/">Home</a>
+  <a href="/courses">Courses</a>
+  <a href="/login">Login</a>
+</nav>
+
+<div class="container">
+  <h1>Create Course</h1>
+  <p class="small">This form is demo-only (no database yet).</p>
+
+  <form method="post" action="/courses/new">
+    <div>
+      <label>Title</label>
+      <input type="text" name="title" placeholder="e.g., Java Basics" required>
+    </div>
+
+    <div>
+      <label>Description</label>
+      <input type="text" name="description" placeholder="Short description" required>
+    </div>
+
+    <div>
+      <label>Category</label>
+      <input type="text" name="category" placeholder="e.g., Programming" required>
+    </div>
+
+    <button class="btn" type="submit">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>

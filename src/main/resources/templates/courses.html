@@ -3,16 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <title th:text="${title}">Courses</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <h1 th:text="${title}">Courses</h1>
 
-  <nav>
-    <a href="/">Home</a> |
-    <a href="/courses">Courses</a>
-  </nav>
+<div class="header">📚 Courses</div>
 
-  <hr />
-  <p>This will later show courses from the database.</p>
+<nav>
+  <a href="/">Home</a>
+  <a href="/courses">Courses</a>
+  <a href="/courses/new">Create Course</a>
+  <a href="/login">Login</a>
+</nav>
+
+<div class="container">
+  <h1>Course List</h1>
+  <p class="small">Demo list (we will connect database in Assignment 2).</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Java Basics</h3>
+      <p>Category: Programming</p>
+      <button class="btn">View</button>
+      <button class="btn">Enroll</button>
+    </div>
+
+    <div class="card">
+      <h3>Spring Boot Intro</h3>
+      <p>Category: Web</p>
+      <button class="btn">View</button>
+      <button class="btn">Enroll</button>
+    </div>
+
+    <div class="card">
+      <h3>Web Development</h3>
+      <p>Category: Frontend</p>
+      <button class="btn">View</button>
+      <button class="btn">Enroll</button>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>

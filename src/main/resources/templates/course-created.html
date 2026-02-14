@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <title>Course Created</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="header">✅ Course Created</div>
+
+<nav>
+  <a href="/">Home</a>
+  <a href="/courses">Courses</a>
+  <a href="/courses/new">Create Course</a>
+</nav>
+
+<div class="container">
+  <h1>Success!</h1>
+
+  <div class="card">
+    <p><b>Title:</b> <span th:text="${createdTitle}"></span></p>
+    <p><b>Description:</b> <span th:text="${createdDescription}"></span></p>
+    <p><b>Category:</b> <span th:text="${createdCategory}"></span></p>
+  </div>
+
+  <p style="margin-top:16px;">
+    <a class="btn" href="/courses">Back to Courses</a>
+  </p>
+</div>
+
+</body>
+</html>

@@ -3,23 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <title th:text="${title}">Home</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <h1 th:text="${title}">Online Learning Platform</h1>
-  <p th:text="${message}">Welcome!</p>
 
-  <nav>
-    <a href="/">Home</a> |
-    <a href="/courses">Courses</a> |
-    <a href="/login">Login</a>
-  </nav>
+<div class="header">🎓 Online Learning Platform</div>
 
-  <hr />
-  <h2>Featured Courses</h2>
-  <ul>
-    <li>Java Basics</li>
-    <li>Spring Boot Intro</li>
-    <li>Web Development</li>
-  </ul>
+<nav>
+  <a href="/">Home</a>
+  <a href="/courses">Courses</a>
+  <a href="/courses/new">Create Course</a>
+  <a href="/login">Login</a>
+</nav>
+
+<div class="container">
+  <h1>Welcome</h1>
+  <p class="small">This is the dashboard. (Real database features come in Assignment 2.)</p>
+
+  <h2>Quick Actions</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Browse Courses</h3>
+      <p>See available courses and enroll later.</p>
+      <a class="btn" href="/courses">Go to Courses</a>
+    </div>
+
+    <div class="card">
+      <h3>Create a Course</h3>
+      <p>Add a new course using a simple form.</p>
+      <a class="btn" href="/courses/new">Create</a>
+    </div>
+
+    <div class="card">
+      <h3>Login</h3>
+      <p>UI only for now (full auth comes later).</p>
+      <a class="btn" href="/login">Login</a>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
